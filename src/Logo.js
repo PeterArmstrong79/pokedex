@@ -1,12 +1,13 @@
 import React from "react";
-//import App from "./App";
 
 const Logo = (props) => {
-    //const appName = "Pedro's Pokedex";
+  const logWhenClicked = () => {
+    console.log("Pants");
+  };
     return (
       <header>
         <h1>{props.appName}</h1>
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="Pidgey image"></img>
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="Pidgey" onClick={logWhenClicked}></img>
       </header>
     );
   };

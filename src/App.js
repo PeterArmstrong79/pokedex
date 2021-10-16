@@ -3,14 +3,14 @@ import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 
-const abilities=["Anticipation", "Speed", "Solar-Beam"];
-
 function App(){
-  return ( 
+  const abilities=["Anticipation", "Speed", "Solar-Beam"];
+  const date = new Date().toLocaleDateString();
+  return (
     <div>
       <Logo appName="Pedros's Pokedex" />
       <BestPokemon abilities={abilities}/>
-      <CaughtPokemon />
+      <CaughtPokemon date={date}/>
     </div>
   );
 }
