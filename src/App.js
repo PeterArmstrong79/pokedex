@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
+import PokemonMovesSelector from "./PokemonMovesSelector";
 
 function App(){
   const abilities=["Anticipation", "Speed", "Solar-Beam"];
@@ -11,6 +12,7 @@ function App(){
       <Logo appName="Pedros's Pokedex" />
       <BestPokemon abilities={abilities}/>
       <CaughtPokemon date={date}/>
+      <PokemonMovesSelector />
     </div>
   );
 }
